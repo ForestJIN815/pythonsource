@@ -1,15 +1,16 @@
-import random
+import random  ## 체크 ##
 import time
 import sqlite3
 from datetime import datetime
 
-# 시도 횟수, 정답개수
+# 시도 횟수, 정답 개수
 n, cor_ans = 1, 0
 # word.txt 읽기 => list 담기
 words = []
 with open("./basic/word.txt", "r", encoding="utf-8") as f1:
     for w in f1:
         words.append(w.strip())
+
 
 # print(words)
 
@@ -26,6 +27,7 @@ while n < 6:
     random.shuffle(words)
     # 임의 추출
     q = random.choice(words)
+    print(q)
 
     # 문제 보여주기
     print(f"Question #{n}")
