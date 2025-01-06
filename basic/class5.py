@@ -17,7 +17,8 @@ class Circle:
 
 
 circle = Circle(10)
-# print(circle.__radius) # AttributeError: 'Circle' object has no attribute '__radius'
-print(circle.get_radius())
+# print(circle.__radius)  # AttributeError: 'Circle' object has no attribute '__radius'
+print(circle.get__radius())
 print("원 둘레 : ", circle.get_circumference())
-print("원 면적 : ", circle.get_circle_area())
+print("원 면적 : ", circle.get_area())
+################################################# 답 안 나오는디.. 췍
